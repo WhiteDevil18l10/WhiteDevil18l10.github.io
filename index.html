@@ -96,11 +96,13 @@
     </ul>
     <script>
         function copyId(id) {
-            navigator.clipboard.writeText(id).then(function() {
-                alert('Gamer ID copied!');
-            }, function() {
-                alert('Failed to copy gamer ID');
-            });
+            const inputElement = document.createElement('input');
+            inputElement.value = id;
+            document.body.appendChild(inputElement);
+            inputElement.select();
+            document.execCommand('copy');
+            document.body.removeChild(inputElement);
+            alert('Gamer ID copied!');
         }
     </script>
 </body>

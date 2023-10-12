@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profiles</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your background image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 10px;
+            display: flex;
+            justify-content: flex-start; /* Updated to left-center */
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3); /* Add a semi-transparent white background to the container */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners to the container */
+            width: 100%;
+            margin: 100px;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px; /* Adjust as needed */
+        }
+
+        .profile-name {
+            margin-top: 10px;
+        }
+
+        .links {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 50px; /* Remove default margin */
+        }
+
+        .links li {
+            margin-bottom: 10px;
+            display: flex; /* Use flexbox for horizontal alignment */
+            align-items: center; /* Center content vertically within the list item */
+            justify-content: center; /* Center content horizontally within the list item */
+        }
+
+        .links a {
+            text-decoration: none;
+            display: flex; /* Use flexbox for horizontal alignment */
+            align-items: center; /* Center content vertically within the link */
+            justify-content: center; /* Center content horizontally within the link */
+            color: white; /* Set link color to white */
+        }
+        .links img {
+            width: 30px; /* Adjust the width as needed */
+            height: auto; /* This maintains the aspect ratio */
+            margin-right: 10px; /* Add some space between the icon and text */
+        }
+        h3 {
+            color: white; /* Set the heading font color to white */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="your-profile-pic.jpg" alt="Your Name" class="profile-pic">
+        <div class="profile-name">
+            <h2>Palvannan Baskar</h2>
+        </div>
+    </div>
+    <h3 style="text-align: center;">Socials</h3>
+    <ul class="links">
+        <li><a href="https://www.facebook.com/palvannan.baskar"><img src="facebook-icon.png" alt="FB">Palvannan Baskar</a></li>
+        <li><a href="https://www.instagram.com/paul.18l10/"><img src="instagram-icon.png" alt="Insta">@paul.18l10</a></li>
+        <li><a href="https://www.snapchat.com/add/pal_1810?share_id=xeBzy3YCXV8&locale=en-US"><img src="snapchat-icon.png" alt="Snap">pal_1810</a></li>
+    </ul>
+    <h3 style="text-align: center;">Professional</h3>
+    <ul class="links">
+        <li><a href="https://www.linkedin.com/in/palvannan-baskaraboopathi-416214218/"><img src="linkedin-icon.png" alt="in">Palvannan Baskaraboopathi</a></li>
+    </ul>
+    <h3 style="text-align: center;">Gaming Tags</h3>
+    <ul class="links">
+        <li><a href="https://discord.com/"> <img src="discord-icon.png" alt="Discord">WhiteDevil_1810#7466</a></li>
+        <li><a href="https://ubisoftconnect.com/en-US/dashboard/"><img src="ubisoft-icon.png" alt="Ubi">WhiteDevil_1810</a></li>
+        <li><a href="https://www.playstation.com/en-au/"><img src="playstation-icon.png" alt="PSN">WhiteDevil_1810</a></li>
+    </ul>
+</body>
+</html>

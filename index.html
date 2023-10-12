@@ -49,6 +49,7 @@
             display: flex; /* Use flexbox for horizontal alignment */
             align-items: center; /* Center content vertically within the list item */
             justify-content: center; /* Center content horizontally within the list item */
+            cursor: pointer;
         }
 
         .links a {
@@ -88,10 +89,19 @@
     </ul>
     <h3 style="text-align: center;">Gaming Tags</h3>
     <ul class="links">
-        <li><a href="https://discord.com/"> <img src="discord-icon.png" alt="Discord">WhiteDevil_1810#7466</a></li>
-        <li><a href="https://ubisoftconnect.com/en-US/dashboard/"><img src="ubisoft-icon.png" alt="Ubi">WhiteDevil_1810</a></li>
-        <li><a href="https://www.playstation.com/en-au/"><img src="playstation-icon.png" alt="PSN">WhiteDevil_1810</a></li>
-        <li><a href="https://accounts.epicgames.com/launcher/addFriends"><img src="epic-icon.png" alt="Epic">WhiteDevil_1810</a></li>
+        <li id="Discord" onclick="copyId('WhiteDevil_1810#7466')"><img src="discord-icon.png" alt="Discord"><a>WhiteDevil_1810#7466</a></li>
+        <li id="Ubi" onclick="copyId('WhiteDevil_1810')"><img src="ubisoft-icon.png" alt="Ubi"><a>WhiteDevil_1810</a></li>
+        <li id="PSN" onclick="copyId('WhiteDevil_1810')"><img src="playstation-icon.png" alt="PSN"><a>WhiteDevil_1810</a></li>
+        <li id="Epic" onclick="copyId('WhiteDevil_1810')"><img src="epic-icon.png" alt="Epic"><a>WhiteDevil_1810</a></li>
     </ul>
+    <script>
+        function copyId(id) {
+            navigator.clipboard.writeText(id).then(function() {
+                alert('Gamer ID copied!');
+            }, function() {
+                alert('Failed to copy gamer ID');
+            });
+        }
+    </script>
 </body>
 </html>
